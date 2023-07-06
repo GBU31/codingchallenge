@@ -4,12 +4,8 @@ import boto3
 def lambda_handler(event, context):
     
     # Create a DynamoDB client
-    try:
-        dynamodb = boto3.resource('dynamodb', aws_access_key_id="", aws_secret_access_key="")
-
-    except Exception as e:
-        print(e)
-    
+ 
+    dynamodb = boto3.resource('dynamodb', aws_access_key_id="", aws_secret_access_key="")
     table_name = "Posts-table"
     table = dynamodb.Table(table_name)
     res = table.get_item(Key={"user": "daniel_tashman"})
