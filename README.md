@@ -1,5 +1,5 @@
 # Coding Challenge
-###  A React app that fetches data from an AWS Lambda function
+#  A React app that fetches data from an AWS Lambda function
 
 # Environment Setup
 ### to use this app you must have Nodejs and AWS CLI installed.
